@@ -32,8 +32,10 @@ main{
     display: flex;
     flex-direction: row;
 }
-.col img{
-    height: 15vh;
-    width: 8vw;
 
+.imagem {
+    width: 100px;
+    height: 100px;
 }
+
+
