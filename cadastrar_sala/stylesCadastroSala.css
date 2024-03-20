@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+.engenharia:hover {
+    background-image: linear-gradient(90deg, rgba(112,37,21,1) 0%, rgba(217,53,21,1) 12%, rgba(137,65,200,1) 24%, rgba(24,44,131,1) 35%, rgba(62,144,196,1) 48%, rgba(53,167,189,1) 62%, rgba(70,157,77,1) 75%, rgba(149,230,164,1) 88%, rgba(91,140,55,1) 100%);
+
+    /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* Alguns navegadores precisam do prefixo */
+
+    /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+    -webkit-text-fill-color: transparent;
+
+    /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
+    color: black;
+}
+header div {
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+}
+
+main{
+    height: 90vh;
+
+}
+main > div {
+    height: 250px;
+    width: 350px;
+    padding: 20px;
+}
+.form{
+    width: 100%;
+    
+}
+.form div{
+    margin-top: 10px;
+}
+.form input{
+    width: 100%;
+}
