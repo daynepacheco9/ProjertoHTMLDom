@@ -13,7 +13,7 @@
         <div class="d-flex flex-column flex-md-row align-items-center md-5 p-3 px-md-4 mb-3 bg-white border-bottom shadow">
             <div class="d-flex flex-row align-items-center justify-content-center">
                 <b class="engenharia pe-2" style=" font-weight: 900;">Controle </b>
-                <span style="color:#595959; font-weight: 500;"> de Estudantes</span>
+                <a href="/"><span style="color:#595959; font-weight: 500;"> de Estudantes</span></a>
             </div>
             <nav class="my-2 my-md-9 mr-md-3 d-flex flex-row align-items-center justify-content-center" >
                 <h6 class="p-2 m-0" >Cadastrar: </h6>
@@ -49,7 +49,7 @@
                     </button>
                     <ul class="dropdown-menu">
                         <% salas.forEach( x => {%>
-                            <li><a class="dropdown-item" href="#"><%= x.Nome %>></a></li>
+                            <li><a class="dropdown-item" href="#"><%= x.Nome %></a></li>
                         <% }) %>
                     </ul>
                 </div>

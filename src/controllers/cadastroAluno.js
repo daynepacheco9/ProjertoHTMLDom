@@ -15,12 +15,14 @@ module.exports = {
         // Recebe as informações do front-end
         const dados = req.body;
         // Criando sala no banco de dados
-        await sala.create({
+        // Nome padrão da foto
+        let foto = 'usuario.png';
+        await aluno.create({
             IDAluno: dados.IDAluno,
             Nome: dados.nome,
             Idade : dados.Idade,
             Sexo : dados.Sexo,
-            Fotos: dados.Fotos
+            Foto: foto
         });
         
         res.redirect('/');

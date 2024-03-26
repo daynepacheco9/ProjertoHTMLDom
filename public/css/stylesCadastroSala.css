@@ -44,3 +44,7 @@ main > div {
 .form input{
     width: 100%;
 }
+
+a {
+    text-decoration: none;
+}
